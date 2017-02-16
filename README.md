@@ -1,1 +1,1 @@
-My Personal Webpage developed with ReactJS
+My personal webpage developed with ReactJS
