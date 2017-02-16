@@ -18,10 +18,16 @@ export default class SideBar extends React.Component{
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <a href="https://github.com/danieldcl" target="_blank">Github</a>
           </li>
           <li>
             <Link to="/resume">Resume</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
