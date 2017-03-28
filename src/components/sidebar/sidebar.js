@@ -5,39 +5,30 @@ import { Link } from 'react-router';
 export default class SideBar extends React.Component{
   render(){
     return(
-    <div class="sidebar-content">
-        <div class="img-wrapper">
-          <img src="./assets/imgs/profilepicture.JPG" />
-        </div>
-        <h1>Dingchao Liao (Dc)</h1>
+    <div id="sidebar" class="sidebar col-xs-12 col-sm-3 col-md-4 pull-left">
+        <img class="profilepicture" src="/assets/img/profilepicture.JPG" />
+
+        <h2>Hi, I'm Dc</h2>
         <p>
-          Web Developer. Python, ReactJS, HTML, Javascript.
+          <i>Software developer</i> at <a href="http://fripapp.com" target="_blank">Fripapp</a>.
         </p>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <Link to="/work">Work and Experience</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
 
-        <div>
-          <button type="button" class="navbar-toggle pull-left hidden-md hidden-lg" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only ">Toggle navigation</span> <i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
-
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-left navr">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About Me</Link>
-              </li>
-              <li>
-                <a href="https://github.com/danieldcl" target="_blank">Github</a>
-              </li>
-              <li>
-                <Link to="/resume">Resume</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-
-            </ul>
-          </div>
-      </div>
+            <a href="https://github.com/danieldcl" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/dingchao-liao-412217107/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        </ul>
     </div>
   )}
 }
