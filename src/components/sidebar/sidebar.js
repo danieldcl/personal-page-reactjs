@@ -12,7 +12,7 @@ export default class SideBar extends React.Component{
         <p>
           <i>Software developer</i> at <a href="http://fripapp.com" target="_blank">Fripapp</a>.
         </p>
-        <ul>
+        <ul class="list-group">
           <li>
             <Link to="/">Home</Link>
           </li>

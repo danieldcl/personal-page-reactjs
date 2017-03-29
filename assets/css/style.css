@@ -23,14 +23,31 @@
     color:white;
 }
 
-ul {
+.list-group {
   list-style: none;
   font-size: 20px;
+}
+
+.list-group li{
+  margin: 10px 10px 10px 10px;
 }
 
 .profilepicture{
   max-width: 100%;
   height: auto;
+}
+
+#contactForm{
+  margin: 50px 50px 20px 50px;
+}
+
+#contact h1{
+  margin: 20px 10px 0 20px;
+}
+
+textarea{
+  min-width:80%;
+  min-height: 350px;
 }
 
 @media screen and (max-width:400px){
@@ -47,9 +64,13 @@ ul {
     font-size: 15px;
   }
 
+  .list-group {
+    list-style: none;
+    font-size: 20px;
+  }
 
-  .content{
-    float:left;
+  .list-group li{
+    margin: 5px 5px 5px 5px;
   }
 
 }
