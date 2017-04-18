@@ -5,9 +5,16 @@
 #sidebar {
   text-align: center;
   height:100vh;
-  background: #222222;
+  background: -webkit-linear-gradient(left, black, white );
+  background: -moz-linear-gradient(left, black, white);
   position: fixed;
   z-index: 1;
+}
+
+.sidebar img{
+  width: 250;
+  height: 250;
+  margin-top: 20px;
 }
 
 .sidebar p{
@@ -30,12 +37,34 @@
 
 .list-group li{
   margin: 10px 10px 10px 10px;
+
+}
+
+.img-wrapper{
+  width:100%;
 }
 
 .profilepicture{
   max-width: 100%;
   height: auto;
+  margin:0 auto;
 }
+
+.email-wrapper{
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(right, white, grey );
+  background: -moz-linear-gradient(right, white, grey);
+}
+
+.email-link:hover{
+  text-decoration: none;
+}
+
 
 #contactForm{
   margin: 50px 50px 20px 50px;
@@ -50,11 +79,15 @@ textarea{
   min-height: 350px;
 }
 
-@media screen and (max-width:400px){
+
+
+@media screen and (max-width:766px){
   #sidebar{
     position: relative;
     width:100%;
-    height: 500px;
+    height: auto;
+    background: -webkit-linear-gradient(top, white, black );
+    background: -moz-linear-gradient(top, white, black);
   }
   #sidebar p{
     font-size: 15px;
